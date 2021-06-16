@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <style>
+    body{
+      margin: 0;
+    }
+    #contents{
+      width: 640px;
+      height: 320px;
+      margin: auto;
+      border: 1px solid #ccc;
+    }
+
+    @media screen and (max-width: 640px){
+      #contents{
+        width: 100%;
+        height: 200px;
+      }
+    }
+  </style>
+  <div class="inner" id="contents"></div>
+  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+  <script src="../canvas_sakura.js"></script>
+  <script>
+    $("#contents").canvasSakura();
+  </script>
+</body>
+</html>
